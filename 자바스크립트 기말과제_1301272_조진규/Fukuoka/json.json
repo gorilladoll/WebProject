@@ -1,0 +1,29 @@
+{
+ "result":"success",
+ "goal":[
+     {
+      "name":"일본어",
+      "kind":"JPT",
+      "grade":"690",
+      "time":"2학년5월(취득)"
+     },
+     {
+      "name":"일본어",
+      "kind":"JLPT",
+      "grade":"N2급",
+      "time":"고등학교(취득)"
+     },
+     {
+      "name":"전공",
+      "kind":"자바",
+      "grade":"SCJP",
+      "time":"2학년11월(예정)"
+     },
+     {
+      "name":"전공",
+      "kind":"자바스크립트",
+      "grade":"홈페이지작성",
+      "time":"2학년 10월(예정)"
+     }
+  ]
+}

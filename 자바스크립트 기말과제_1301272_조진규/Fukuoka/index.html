@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <script src = 'http://code.jquery.com/jquery-1.11.1.min.js'></script>
+  <script src = "jquery.validate.min.js"></script>
+  <script src = 'header.js'></script>
+  <script src = 'nav.js'></script>
+  <script src = 'left.js'></script>
+  <script src = 'main.js'></script>
+  <script src = 'footer.js'></script>
+
+</head>
+<body>
+  <header>
+  <h1><a href="index.html">영진전문대학 일본취업반</a></h1>
+  <form action="#" id = 'frm' name = 'frm' method = 'post'>
+    ID
+    <input type="text"/>
+    PW
+    <input type="password" />
+    <input type="submit" value = "로그인" name = "login" onclick = "alert('현재 로그인은 지원하지 않습니다');">
+    <input type="reset" value = "초기화" name = "reset">
+  </form>
+</header>
+
+  <nav>
+    <ul>
+      <li><a href = "Fukuoka.html" target = "iframe">일본취업반소개</a></li>
+      <li><a href = "map.html" target = "iframe">찾아오시는길</a></li>
+      <li><a href = "etc.html" target = "iframe">현지학기제</a></li>
+      <li><a href = "profile.html" target = "iframe">프로필</a></li>
+      <li><a href = "gallery.html" target = "iframe">갤러리</a></li>
+      <li><a href = "gall.html" target = "iframe">방명록</a></li>
+      <li><a href = "" onclick = "confirmresult();">회원가입(새창)</a></li>
+    </ul>
+  </nav>
+  <aside id = "left">
+    <h1>카테고리</h1>
+    <ul>
+      <li><a href = "introduce.html" target = "iframe">후쿠오카 소개</a></li>
+      <li><a href = "place.html" target = "iframe">후쿠오카 여행루트</a></li>
+      <li><a href = "video.html" target = "iframe">후쿠오카 동영상</a></li>
+      <li><a href = "https://yokanavi.com/ko/" target = "_blank">공식사이트 바로가기</a></li>
+      <li><a href="http://japanian.tistory.com/21" target = "_blank">여행정보 바로가기</a></li>
+      <li><a href="http://www.welcometojapan.or.kr/" target = "_blank">일본관광청 바로가기</a></li>
+    </ul>
+  </aside>
+
+  <section id="main">
+    <article>
+      <iframe src="Fukuoka.html" name = "iframe">
+      </iframe>
+    </article>
+    <article>
+      <button>노래</button><br/>
+      <audio src="bgm.mp3" controls id = 'audio' loop="auto" preload="auto" style = "display:none" autoplay>
+        your browser does not support the audio element.
+      </audio>
+    </article>
+  </section>
+
+  <footer>
+    <h3>CopyRight(c)&nbsp;2016 WebSite</h3>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>signin</title>
+  <style>
+  body{
+    height:100%;
+    background-color:#F3F1E9;
+  }
+  label{
+    display:inline-block;
+    width:120px;
+  }
+  input{
+    display:inline-blick;
+  }
+  </style>
+  <script src = "signin.js"></script>
+</head>
+<body>
+  <div id = "pagewrap">
+    <form method = "post" action="process.jsp">
+      <fieldset>
+        <p>
+          <legend><h3>회원정보입력</h3></legend>
+          <label for="name">아이디</label>
+          <input type="text" name = "id" id = "id">
+          <br />
+
+          <label for="password1">패스워드</label>
+          <input type="password" name = "password1" id = "password">
+          <br />
+
+          <label for="password2">패스워드확인</label>
+          <input type="password" name = "password2" id = "password2">
+          <br />
+
+          <label for="name">이름</label>
+          <input type="text" name = "name" id = "name">
+          <br />
+
+          <label for="tel">휴대전화번호</label>
+          <input type="tel" name = "tel"/>
+          <br />
+
+          <label for="email">이메일</label>
+          <input type="email" name = "email" id = "email" />
+          <br />
+
+          <label for="dob">생일</label>
+          <input type="date" name = "dob" id = "dob">
+          <br />
+
+          <label for="url">홈페이지</label>
+          <input type="url" name = "url" id = "url">
+          <br />
+        </p>
+        <hr>
+        </br>
+
+        <p>
+          <h4>성별</h4><br/>
+          <input type="radio" name = "gender" value = "Male" id = "ge">
+          남성<br>
+          <input type="radio" name = "gender" value = "Female" id = "ge">
+          여성<br>
+        </p>
+        <hr>
+        <br/>
+
+        <p>
+          <h4>신장</h4><br/>
+          <input type="radio" name = "higher" value = "160and165" id = "ta">
+          160 이상 165이하<br>
+
+          <input type="radio" name = "higher" value = "165and170" id = "ta">
+          165 이상 170이하<br>
+
+          <input type="radio" name = "higher" value = "170and175" id = "ta">
+          170 이상 175이하<br>
+
+          <input type="radio" name = "higher" value = "over175" id = "ta">
+          175 이상<br>
+        </p>
+        <hr>
+        <br/>
+
+        <p>
+          <h4>몸무게</h4><br/>
+          <select name="weight" id="weight">
+            <option value="fifty">50kg 대</option>
+            <option value="sixty">60kg 대</option>
+            <option value="seventy">70kg 대</option>
+            <option value="eifhty">80kg 대</option>
+            <option value="overninty">90kg 이상</option>
+          </select>
+        </p>
+        <hr>
+        <br/>
+
+        <p>
+          <h4>취미</h4>
+          <input type="checkbox" name = "hobby" value = "readbook">독서<br/>
+          <input type="checkbox" name = "hobby" value = "listenmusic">음악감상<br/>
+          <input type="checkbox" name = "hobby" value = "seemovie">영화감상<br/>
+          <input type="checkbox" name = "hobby" value = "programing">프로그래밍<br/>
+          <input type="checkbox" name = "hobby" value = "game">게임<br/>
+          (복수선택가능)
+        </p>
+        <hr>
+        <br/>
+
+        <p>
+          <h4>하고싶은 말</h4><br/>
+          <textarea name="feedback" cols="50" rows="4"></textarea>
+        </p>
+      </fieldset>
+
+      <input type="submit" name = "submit" value = "제출" onclick = "sendIt();">
+      <input type ="reset" name = "reset" value = "초기화">
+    </form>
+  </div>
+</body>
+</html>
